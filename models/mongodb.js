@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
  
-mongoose.connect('mongodb://localhost:27017/task', {useNewUrlParser: true}, (err) => {
+mongoose.connect('mongodb+srv://user3:user3@cluster0.u7fov.mongodb.net/Cluster0?retryWrites=true&w=majority', {useNewUrlParser: true}, (err) => {
 if (!err) {
 console.log('Successfully Established Connection with MongoDB')
 }
