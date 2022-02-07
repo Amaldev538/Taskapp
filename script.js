@@ -19,7 +19,7 @@ app.engine('hbs', exphb.engine({ extname: 'hbs', defaultLayout: 'mainLayout', la
 app.set('view engine', 'hbs');
  
 
-app.listen(5000,() => {
+app.listen(process.env.PORT,() => {
 console.log('Express Server Started')
 });
  
