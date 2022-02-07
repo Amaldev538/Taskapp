@@ -19,9 +19,8 @@ app.engine('hbs', exphb.engine({ extname: 'hbs', defaultLayout: 'mainLayout', la
 app.set('view engine', 'hbs');
  
 
-app.listen(process.env.PORT,() => {
-console.log('Express Server Started')
-});
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Listening on port ${port}..`));
  
 
 app.use('/Task', TaskController);
