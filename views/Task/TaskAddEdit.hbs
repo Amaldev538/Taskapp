@@ -1,0 +1,19 @@
+  <center>
+<h3 style ="font-family:Verdana;" >{{viewTitle}}</h3>
+<form action="/Task" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{Task._id}}">
+
+<div class = "form-group">
+<label style ="font-family:Georgia;">Task Name</label>
+<input type="text"  style="font-family:serif;" class="form-control" name="TaskName" placeholder="Task Name" ><br><br>
+ 
+<div class = "form-group">
+<label style ="font-family:Georgia;">Task Description</label>
+<input type="text" style="font-family:serif;"  class="form-control" name="TaskId" placeholder="Task Desc" required><br><br>
+</div>
+<div class="form-group">
+<button type="submit" class="btn" style="background-color:black;color:white;width:150px;";>Submit</button>
+<a style="font-family:Arial, Helvetica, sans-serif;" class="btn" href="/Task/list">View All Tasks</a>
+</div>
+</form>
+</center>

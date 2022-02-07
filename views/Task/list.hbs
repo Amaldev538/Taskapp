@@ -1,0 +1,28 @@
+<center>
+<h2 style="font-family:Verdana;">List Page</h2>
+<table>
+    <thead>
+        <tr>
+            <th style="font-family:serif;">Task Name</th>
+            <th style="font-family:serif;">Task Description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td style="font-family:courier;">{{this.TaskName}}</td>
+            <td style="font-family:courier;">{{this.TaskId}}</td>
+            <td>
+                <a href="/task/{{this._id}}"><button>Edit</button></a>
+                <a href="/task/delete/{{this._id}}" onclick="return confirmation("Are you sure")"><button>Delete</button></a>
+            </td>
+
+        </tr>
+        
+        {{/each}}
+    </tbody>
+</table>
+<br><a href="/task"><button style="background-color:black;color:white;width:200px;"> Go Back and Create New </button> </a>
+
+</center>
